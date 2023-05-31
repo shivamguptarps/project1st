@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styleW.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <h1 id="mainheading">| Welcome To Projects |</h1>
+    <header>
+        <!-- <button id="mode-toggle">Toggle Mode</button> -->
+        <nav>
+            <ul class="menu">
+                <li class="navanchor"><a  href="portfolio.html">Portfolio</a></li>
+                <li class="navanchor"><a  href="music player.html">Music Player</a></li>
+                <li class="navanchor"><a  href="typing speed.html">Typing Speed Game</a></li>
+                <li class="navanchor"><a  href="text editor.html">Text Editor</a></li>
+                <li class="navanchor"><a  href="tic tac toe.html">Tic Tac Toe</a></li>
+                <!-- <li class="navanchor"><a  href="">Photography</a></li> -->
+                <li class="navanchor"><a  href="registration.html">Registration Form</a></li>
+                <li class="navanchor"><a  href="person counter.html">Person Counter</a></li>
+                <li class="navanchor"><a  href="tribute page.html">Tribute Page</a></li>
+                <li class="navanchor"><a  href="survey form.html">Survey Form</a></li>
+                
+              </ul>
+        </nav>
+      </header>
+    <div id="maindiv">
+        <div class="box">
+            <h2>Registration Form</h2>
+    <div class="project_brief">creation a Registration form. Now, this project we are very familiar with this because this is been introduced when we get to know about Form tag. The form is basically a section of the document that contains markup, contents & some special elements such as radio buttons, checkboxes, menus & text areas.
+        <br><br>
+        This is basically a Registration Form. And it is validated using Javascript.
+    </div>
+    <div class="authorco">
+    <div class="name1">Author : Shivam Gupta</div>
+    <div class="name1">Collaborator : Radhika Mehra</div>
+</div>
+    <span>
+        <button class="projectbutton"><a href="shivam'sFinal\project form\index.html">View Project</a></button>
+        <button class="projectbutton"><a href="https://drive.google.com/drive/folders/1Jpu_WDEvfzIAUUW9lBewuNArobtNdQPv?usp=share_link">Download Project</a></button>
+</span>
+ </div>
+</div>
+
+<footer class="footer-1">
+    <div class="about">
+        <img src="images/favicon.ico" alt="not available" width="150">
+        <table class="content" cellspacing="35px">
+            <tr>
+                <th>LANGUAGE</th>
+                <th>DATA STRUCTURE</th>
+                <th>ALGORITHMS</th>
+                <th>WEB DEVELOPMENT</th>
+            </tr>
+            <tr>
+                <td>PYTHON</td>
+                <td>ARRAY</td>
+                <td>SORTING</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>JAVA</td>
+                <td>STRING</td>
+                <td>SEARCHING</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>LINKED LIST</td>
+                <td>GREEDY</td>
+                <td>JAVASCRIPT</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>&copy;MRS</td>
+                    <td><a style="color:rgb(255, 255, 255);" href="https://goo.gl/maps/qE5NbS2hK2VkjNyd9"><i class="material-icons">add_location</i></a> National Institute Of Technology ,
+                        Kurukshetra(136119)</td>
+                        
+                </tr>
+                <!-- <tr>
+                    <td>&copf; Geeks For Geeks</td>
+                    <td>&copf; Code With Random</td>
+                    <td>&copf; WWW.teamwork.com</td>
+                </tr> -->
+            </tfoot>
+        </table>
+    </div>
+</footer>
+
+</body>
+<script>
+
+    const textElement = document.getElementById("mainheading");
+    const text ="| Welcome To Projects |"
+    let index = 1;
+    
+    const writeText = () => {
+      textElement.innerText = text.slice(0, index);
+      index++;
+    
+      setTimeout(writeText, 60);
+    };
+    writeText();
+    
+      </script>
+</html>
